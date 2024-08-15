@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Accumulator Lottery</title>
-    <script src="./index.html" defer></script>
+    
+    <script src="logic.js" defer></script>
+
 </head>
 <body>
-    <H1>Accumulator Lottery</H1>
+    <H1 class="title">Accumulator Lottery</H1>
     
-    <button onclick="acca1()">Button</button>
 
-    <p id="result"></p>
+    <div class="btns">
+        <button class="btnSingle" onclick="single()">Single</button>
+        <button class="btnAcc1" onclick="acca1()">Acca1</button>
+        <button class="btnAcc2"onclick="acca2()">Acca2</button>
+        <button class="btnAcc3"onclick="acca3()">Acca3</button>
+    </div>
+    
+
+    <div class="backDropListLayer">
+        <div class="singlePick">
+            <p id="single">Single</p> 
+        </div>
+        <div class="pick1">
+            <p id="acca1">Accumulator 1</p>  
+        </div>
+        <div class="pick2">
+            <p id="acca2">Accumulator 2</p>   
+        </div>
+        <div class="pick3">
+            <p id="acca3">Accumulator 3</p>
+        </div>
+    </div>
 </body>
 </html>
